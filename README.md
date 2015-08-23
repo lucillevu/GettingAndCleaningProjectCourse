@@ -1,6 +1,6 @@
-# Course Project Workflow
+## Course Project Workflow
 
-'run_analysis.R' script does the following action sequence:
+'run_analysis.R' script does the following action sequence: \n
       1.	Verify if the existing data was yet download
               i.	If not Downloading and extracting raw data
       2.	Reading instruction content from Activity and Feature introduction file

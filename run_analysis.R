@@ -57,13 +57,13 @@ correctLabels <- function(labels) {
 #============================================
 #Download and unzip the file
 
-#fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
-#fileName <- "getdata_projectfiles_UCI HAR Dataset.zip"
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
+fileName <- "getdata_projectfiles_UCI HAR Dataset.zip"
 
-#if(!file.exists(fileName)){
-#    download.file(fileUrl,fileName, mode = "wb")
-#}
-#unzip(fileName)
+if(!file.exists(fileName)){
+    download.file(fileUrl,fileName, mode = "wb")
+}
+unzip(fileName)
 
 # Reading data and cleaning datasets
 testData <- extractData(fileFolder, "test")
